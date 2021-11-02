@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Weather">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/sun"
+                android:name="com.msikora.astro_weather.Sun"
+                android:layout_width="match_parent"
+                android:layout_height="365dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_sun" />
+
+            <FrameLayout
+                android:id="@+id/moon"
+                android:name="com.msikora.astro_weather.Moon"
+                android:layout_width="match_parent"
+                android:layout_height="365dp"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@+id/sun"
+                tools:layout="@layout/fragment_moon" />
+
+<!--            <FrameLayout-->
+<!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                android:id="@+id/conditions"-->
+<!--                android:name="com.msikora.astro_weather.Conditions"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="0.5"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/moon"-->
+<!--                tools:layout="@layout/fragment_conditions" />-->
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

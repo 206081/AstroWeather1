@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">astro_weather</string>
+    <string name="Creator">Michał Sikora 206081</string>
+    <string name="email">206081@edu.p.lodz.pl</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+
+    <string name="latitude" />
+    <string name="latitudeHint">Latitude</string>
+    <string name="longitude" />
+    <string name="longitudeHint">Longitude</string>
+    <string name="interval" />
+    <string name="intervalHint">Interval</string>
+    <string name="confirm">Confirm</string>
+
+    <string-array name="intervalArray">
+        <item>seconds</item>
+        <item>hours</item>
+        <item>days</item>
+    </string-array>
+
+
+    <string name="sun">Sun</string>
+    <string name="sun_rise" />
+    <string name="sun_rise_azimuth" />
+    <string name="sun_rise_civil" />
+    <string name="sun_set" />
+    <string name="sun_set_azimuth" />
+    <string name="sun_set_civil" />
+    <string name="sun_twilight_civil" />
+    <string name="sun_dawn_civil" />
+
+    <string name="moon">Moon</string>
+    <string name="moon_rise" />
+    <string name="moon_set" />
+    <string name="moon_new" />
+    <string name="moon_full" />
+    <string name="moon_phase" />
+    <string name="moon_synodic" />
+
+
+</resources>
