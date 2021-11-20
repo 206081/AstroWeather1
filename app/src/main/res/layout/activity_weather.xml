@@ -12,7 +12,38 @@
         tools:context=".Weather">
 
 
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longitude" />
+
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -34,15 +65,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/sun"
                 tools:layout="@layout/fragment_moon" />
 
-<!--            <FrameLayout-->
-<!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--                android:id="@+id/conditions"-->
-<!--                android:name="com.msikora.astro_weather.Conditions"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_weight="0.5"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/moon"-->
-<!--                tools:layout="@layout/fragment_conditions" />-->
+            <!--            <FrameLayout-->
+            <!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--                android:id="@+id/conditions"-->
+            <!--                android:name="com.msikora.astro_weather.Conditions"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:layout_weight="0.5"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/moon"-->
+            <!--                tools:layout="@layout/fragment_conditions" />-->
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
