@@ -38,7 +38,7 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
     }
 
     public void confirmButton(View view) {
-        Intent intent = new Intent(this, Weather.class);
+        Intent intent = new Intent(this, BaseActivity.class);
         EditText latitude = findViewById(R.id.latitude);
         EditText longitude = findViewById(R.id.longitude);
         EditText interval = findViewById(R.id.interval);
@@ -93,6 +93,7 @@ public class Menu extends AppCompatActivity implements AdapterView.OnItemSelecte
         }
 
         DataHandler.intervalMagnitude = spinner.getSelectedItem().toString();
+        DataHandler.intervalTmp = DataHandler.interval;
 
         if (!is_empty_latitude & !is_empty_longitude & !is_empty_interval
                 & is_correct_interval & is_correct_latitude & is_correct_longitude)
